@@ -1,9 +1,9 @@
-import sequelize from "../config/connection";
-import { Category, Product, Tag } from "../models";
+const sequelize = require("../config/connection");
+const { Category, Product, Tag } = require("../models");
 
-import categorySeedData from "./categorySeedData.json";
-import productSeedData from "./productSeedData.json";
-import tagSeedData from "./tagSeedData.json";
+const categorySeedData = require("./categorySeedData.json");
+const productSeedData = require("./productSeedData.json");
+const tagSeedData = require("./tagSeedData.json");
 
 const seedDatabase = async () => {
     await sequelize({ force: true });

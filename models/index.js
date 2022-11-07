@@ -1,6 +1,6 @@
-import Category from "./Category";
-import Product from "./Product";
-import Tag from "./Tag";
-import ProductTag from "./ProductTag";
+const Category = require("./Category");
+const Product = require("./Product");
+const Tag = require("./Tag");
+const ProductTag = require("./ProductTag");
 
-export default { Category, Product, Tag, ProductTag };
+module.exports =  { Category, Product, Tag, ProductTag };
